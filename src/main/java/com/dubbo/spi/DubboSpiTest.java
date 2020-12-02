@@ -1,6 +1,6 @@
 package com.dubbo.spi;
 
-import com.frame.dubbo.spi.java.Robot;
+import com.dubbo.spi.model.Robot;
 import org.apache.dubbo.common.extension.ExtensionLoader;
 import org.junit.Test;
 
@@ -12,10 +12,9 @@ import org.junit.Test;
 public class DubboSpiTest {
     @Test
     public void sayHello() throws Exception {
-        /**META-INF/dubbo中的配置文件名称必须是接口包名加类名
+        /**
+         * META-INF/dubbo中的配置文件名称必须是接口包名加类名
          * 文件中必须存在相应的key
-         *
-         *
          * */
         ExtensionLoader<Robot> extensionLoader =
                 ExtensionLoader.getExtensionLoader(Robot.class);

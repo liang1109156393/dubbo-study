@@ -1,6 +1,6 @@
 package com.dubbo.spi;
 
-import com.frame.dubbo.spi.java.Robot;
+import com.dubbo.spi.model.Robot;
 import org.junit.Test;
 
 import java.util.ServiceLoader;
